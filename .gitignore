@@ -1,0 +1,30 @@
+# Symfony directories
+/web/css/
+/web/js/
+/web/bundles/
+/app/cache/*
+/app/logs/*
+/build/
+/vendor/
+/bin/
+
+# Other files & directories
+/app/config/parameters.yml
+/app/bootstrap.php.cache
+!app/cache/.gitkeep
+!app/logs/.gitkeep
+/composer.phar
+*.orig
+*.bak
+
+# Editors generated files
+.buildpath
+.settings
+.project
+.idea
+nbproject
+
+# OS generated files
+.DS_Store*
+Thumbs.db
+*~
