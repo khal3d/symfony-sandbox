@@ -1,0 +1,5 @@
+div_looper_sand:
+    resource: "@DivLooperSandBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
