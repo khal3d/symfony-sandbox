@@ -13,5 +13,6 @@ php:
     - hhvm
  
 script:
+    - composer install -n
     - phpunit -c app/
  
