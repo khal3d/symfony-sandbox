@@ -1,0 +1,5 @@
+build_settings:
+    clone_depth: 5 # depth of 1 is a shallow clone, remove this line to clone entire repo
+setup:
+    composer:
+        action: "install"
