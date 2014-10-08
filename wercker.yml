@@ -1,7 +1,4 @@
 box: wercker/php
-
-steps:
-  - koding/s3put@0.0.3
   
 build:
     # The steps that will be executed on build
@@ -28,6 +25,7 @@ build:
 
 deploy:
     steps:
+        - koding/s3put@0.0.3
         - s3put:
             key-id:     $KEY
             key-secret: $SECRET
