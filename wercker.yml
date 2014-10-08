@@ -9,6 +9,9 @@ build:
           code: |
             echo 'date.timezone = "Africa/Cairo"' >> $HOME/.phpenv/versions/$(phpenv version-name)/etc/php.ini
       - script:
+          name: Update composer
+          code: compser self-update
+      - script:
           name: install dependencies
           code: composer install --no-interaction
       - script:
@@ -16,7 +19,4 @@ build:
           code: |
             echo "php version $(php --version) running"
             echo "from location $(which php)"
-      # Add more steps here:
-      #- script:
-      #    name: run unit tests
-      #    code: phpunit
+      - wercker/grunt@0.1.0
