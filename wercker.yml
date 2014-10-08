@@ -10,7 +10,7 @@ build:
             echo 'date.timezone = "Africa/Cairo"' >> $HOME/.phpenv/versions/$(phpenv version-name)/etc/php.ini
       - script:
           name: Update composer
-          code: composer self-update
+          code: sudo composer self-update
       - script:
           name: install dependencies
           code: composer install --no-interaction
