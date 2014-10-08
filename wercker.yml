@@ -26,3 +26,10 @@ build:
       # - plasticine/bower-install@0.0.4
       # - wercker/grunt@0.1.0
 
+deploy:
+    steps:
+        - s3put:
+            key-id:     $KEY
+            key-secret: $SECRET
+            file:       myproject-0.1.0.tar.gz
+            url:        s3://mybucket/myproject-latest.tar.gz
