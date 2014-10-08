@@ -27,7 +27,7 @@ build:
 deploy:
     steps:
         - s3put:
-            key-id:     $KEY
-            key-secret: $SECRET
+            key-id:     $S3_KEY
+            key-secret: $S3_SECRET
             file:       myproject-0.1.0.tar.gz
             url:        s3://mybucket/myproject-latest.tar.gz
