@@ -16,4 +16,8 @@ build:
           code: |
             echo "php version $(php --version) running"
             echo "from location $(which php)"
+      - script:
+          name: Install Nodejs Packages
+          code: npm install
+      - plasticine/bower-install@0.0.4
       - wercker/grunt@0.1.0
