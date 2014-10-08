@@ -3,6 +3,7 @@ box: wercker/php
 build:
     # The steps that will be executed on build
     steps:
+      - koding/s3put@0.0.3
       # A custom script step, name value is used in the UI
       # and the code value contains the command that get executed
       - script:
@@ -25,7 +26,6 @@ build:
 
 deploy:
     steps:
-        - koding/s3put@0.0.3
         - s3put:
             key-id:     $KEY
             key-secret: $SECRET
