@@ -1,4 +1,8 @@
 box: wercker/php
+
+steps:
+  - koding/s3put@0.0.3
+  
 build:
     # The steps that will be executed on build
     steps:
@@ -21,3 +25,4 @@ build:
       #     code: npm install
       # - plasticine/bower-install@0.0.4
       # - wercker/grunt@0.1.0
+
